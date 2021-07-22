@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/profile.css">
+    <link rel="stylesheet" type="text/css" href="css/head.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>   
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">-->
+
+    <title>profile</title>
+
+</head>
+<body>
+    <div id="list-adress" class="style-list">
+        <a  id="end" class="end-Btn" onclick="closeList()" style="cursor: pointer;">&times;</a>
+        <a href="pro1.html">Home</a>
+        <a href="a.html">Sign In</a>
+        <a href="explore.html">Explore</a>
+        <a href="about_us.html">About US</a>
+    
+    </div>
+    <!--contact-->
+    <div class="contact-user">
+        <div class="btn-form">
+            <a href="#"   onclick="popup()">Contact</a>
+        </div>
+    </div>
+    <span id="start" onclick="openList()" style="font-size: 40px;cursor: pointer;color: white;">&#9776;</span>
+    <!--contac-->
+    <diV id="con-form-pro" class="cont-form-pro"><!--check in form first, if you signed or not-->
+        <form class="form-pro " action="#" target="_self" method="POST">
+            <div class="cont-log">
+                <span class="close" id="close1" 
+                style=" right: 5px;top: 0;
+                color:white;font-size: 35px;font-weight: bold;cursor: pointer;position: relative;left: 200px;">&times</span>
+                <h3>log in</h3>
+            </div>
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="example@gamil.com"  >
+    
+            <label for="password">Password</label>
+            <input id="password" type="password" ><br>
+            <button id="first-btn" type="submit">continue</button><br><hr style="width: 100%;"><br>
+            <button id="btn-one" type="button"><i  class='fab fa-google' style="float: left;font-size: 30px;"></i>continue with gmail</button>
+            <button id="btn-two" type="button"><i class="fab fa-facebook" style="color: rgba(24, 102, 219, 0.438);float: left;font-size: 30px;"></i>continue facebook</button>
+            <p style="align-self:flex-start;">Don't have account?<a href="#">sign in</a></p>
+        </form>
+            
+    </diV>
+    <main>
+        <div class="sec-one">
+            <div class="sec-text">
+                <h1 style="font-size: 60px;">AHMED.S</h1>
+                <p style="font-size: 20px;">THE FOUNDER OF KAGGLE</p>
+
+            </div>
+        </div>
+        <div class="sec-two">
+            <div class="sec-content">
+                <h1 class="sec-text" style="width: 220px;">Who AM I ?</h1>
+                <p>Some text about me. Some text about me.
+                     I am lorem ipsum consectetur adipiscing elit, 
+                     sed do eiusmod tempor incididunt ut labore et 
+                     dolore magna aliqua. Ut enim ad minim veniam,
+                      quis nostrud exercitation ullamco laboris nisi
+                       ut aliquip ex ea commodo consequat. 
+                       Duis aute irure dolor in reprehenderit in 
+                       voluptate velit esse cillum dolore eu fugiat
+                        nulla pariatur. Excepteur sint occaecat cupidatat
+                         non proident, sunt in culpa qui officia deserunt
+                          mollit anim id est laborum consectetur adipiscing 
+                          elit, sed do eiusmod tempor incididunt ut labore 
+                          et dolore magna aliqua. Ut enim ad minim veniam, 
+                          quis nostrud exercitation ullamco
+                     laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+            </div>
+        </div>
+        <div class="sec-three">
+            <h1>My skills </h1>
+            <div class="main-box-dis">
+                <div class="box">
+                    <div class="precent">
+                        <svg width="200" height="200">
+                            <circle  cx="70" cy="70" r="70" ></circle>
+                            <circle cx="70" cy="70" r="70" ></circle>
+                        </svg>
+                        <div class="number">
+                            <h2>75<span>%</span></h2>
+                        </div>
+                    </div>
+                    <h2 class="text" >Mangement</h2>
+                </div>
+                
+                <div class="box">
+                    <div class="precent">
+                        <svg width="200" height="200">
+                            <circle  cx="70" cy="70" r="70" ></circle>
+                            <circle cx="70" cy="70" r="70" ></circle>
+                        </svg>
+                        <div class="number">
+                            <h2>75<span>%</span></h2>
+                        </div>
+                    </div>
+                    <h2 class="text" >Mangement</h2>
+                </div>
+
+                <div class="box">
+                    <div class="precent">
+                        <svg width="200" height="200">
+                            <circle  cx="70" cy="70" r="70" ></circle>
+                            <circle cx="70" cy="70" r="70" ></circle>
+                        </svg>
+                        <div class="number">
+                            <h2 >75<span>%</span></h2>
+                        </div>
+                    </div>
+                    <h2 class="text" >Mangement</h2>
+                </div>
+                <div class="box">
+                    <div class="precent">
+                        <svg width="200" height="200">
+                            <circle  cx="70" cy="70" r="70" ></circle>
+                            <circle cx="70" cy="70" r="70" ></circle>
+                        </svg>
+                        <div class="number">
+                            <h2>75<span>%</span></h2>
+                        </div>
+                    </div>
+                    <h2 class="text" >Mangement</h2>
+                </div>
+                <div class="box">
+                    <div class="precent">
+                        <svg width="200" height="200">
+                            <circle  cx="70" cy="70" r="70" ></circle>
+                            <circle cx="70" cy="70" r="70" ></circle>
+                        </svg>
+                        <div class="number">
+                            <h2>75<span>%</span></h2>
+                        </div>
+                    </div>
+                    <h2 class="text" >Mangement</h2>
+                </div>
+                <div class="box">
+                    <div class="precent">
+                        <svg width="200" height="200">
+                            <circle  cx="70" cy="70" r="70" ></circle>
+                            <circle cx="70" cy="70" r="70" ></circle>
+                        </svg>
+                        <div class="number">
+                            <h2>75<span>%</span></h2>
+                        </div>
+                    </div>
+                    <h2 class="text" >Mangement</h2>
+                </div>
+            </div>
+
+            
+        </div>
+        <div class="sec-four">
+            <div class="comment-section">
+                <h1>Minds Share</h1>
+                <div class="main-section">
+                    <div class="user-comment-img">
+                        <img src="https://images.pexels.com/photos/4443010/pexels-photo-4443010.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" >
+                        <div class="main-user-info">
+                            <div class="user-info">
+                                <p>AHMED JS</p>
+                                <p>CEO at kaggle</p>
+                            </div>
+                            <div class="user-comment">
+                                <p>We see agreat CEO</p>
+                            </div>
+                        </div>    
+                    </div>
+                    
+                </div>  
+                <div class="main-section">
+                    <div class="user-comment-img">
+                        <img src="https://images.pexels.com/photos/3393705/pexels-photo-3393705.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" >
+                        <div class="main-user-info">
+                            <div class="user-info">
+                                <p>AHMED JS</p>
+                                <p>CEO at kaggle</p>
+                            </div>
+                            <div class="user-comment">
+                                <p>We see agreat CEO</p>
+                            </div>
+                        </div>    
+                    </div>
+                    
+                </div>    
+            </div>
+            <div class="main-section">
+                <div class="user-comment-img">
+                    <img src="https://images.pexels.com/photos/3121474/pexels-photo-3121474.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" >
+                    <div class="main-user-info">
+                        <div class="user-info">
+                            <p>AHMED JS</p>
+                            <p>CEO at kaggle</p>
+                        </div>
+                        <div class="user-comment">
+                            <p>We see agreat CEO</p>
+                        </div>
+                    </div>    
+                </div>
+            </div>    
+            <div class="text-input-pro">
+                <div class="text-form-pro">
+                  <textarea id="com-txt" rows="4" cols="60"  onkeypress="autoGrowHeight(this);" onkeyup="autoGrowHeight(this)" placeholder="Leave a comment....."></textarea>
+                </div>   
+                <div class="btn-sec">
+                    <button id="Btn-Color" type="button" >Submit</button>
+                    <button id="cac" type="button">cancel</button>
+                </div>
+                
+            </div> 
+        </div>
+        <div class="sec-five"><!--ofeer section -->
+            <h1>What i Provide </h1>
+            <div class="main-offer">
+                <div class="first-off">
+                    <h3>Design</h3>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. 
+                        Suspendisse sodales pellentesque elementum.
+                    </p>
+                </div>
+                <div class="second-off">
+                    <h3>Branding</h3>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                </div>
+                <div class="third-off">
+                    <h3>Consultation</h3>
+                    <p>
+                        Phasellus eget enim eu lectus faucibus vestibulum. 
+                        Suspendisse sodales pellentesque elementum. 
+                    </p>
+                </div>
+                <div class="fourth-off">
+                    <h3>Promises</h3>
+                    <p>
+                        Phasellus eget enim eu lectus faucibus vestibulum. 
+                        Suspendisse sodales pellentesque elementum. 
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="sec-six "><!--display cards to eplore others-->
+            <h3 style="font-size: 40px;margin-left: 20px;">Explore More Hereos</h3>
+            <p style="margin-left: 20px;font-size: 18px;letter-spacing: 3px;">Explore More </p>
+            <div class="main-card">
+                <div class="card  ">
+                    <img src="https://images.pexels.com/photos/4522973/pexels-photo-4522973.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" >
+                        
+                    <div class="cont-card ">
+                        <h2>Adam Nickeleson</h2>
+                            <h4>CEO & Founder, Example</h4>
+                            <div class="card-icon">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#">Contact</h3></a>
+                                    
+                            </div>
+                        </div>
+                    </div>
+                            
+                    <div class="card ">
+                        <img src="https://images.pexels.com/photos/4838598/pexels-photo-4838598.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" >
+                            
+                        <div class="cont-card">
+                            <h2>Adam Nickeleson</h2>
+                            <h4>CEO & Founder, Example</h4>
+                            <div class="card-icon">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#">Contact</h3></a>
+                                        
+                            </div>
+                        </div>
+                        </div>
+                        <div class="card ">
+                            <img src="https://images.pexels.com/photos/1442399/pexels-photo-1442399.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" >
+                                
+                            <div class="cont-card">
+                                <h2>Adam Nickeleson</h2>
+                                <h4>CEO & Founder, Example</h4>
+                                <div class="card-icon">
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-facebook"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#">Contact</h3></a>
+                                            
+                                </div>
+                            </div>
+                       </div>
+                       <div class="card ">
+                        <img src="https://images.pexels.com/photos/5257534/pexels-photo-5257534.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" >
+                    
+                        <div class="cont-card ">
+                            <h2>Adam Nickeleson</h2>
+                            <h4>CEO & Founder, Example</h4>
+                            <div class="card-icon">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#">Contact</h3></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>  
+                  
+            </div>
+        </div>    
+    </main>
+    <footer>
+        <div class="main-bar">
+            <div class="bar-one">
+                <h3>About Us</h3>
+                <p>We are some helper that love building things for 
+                    people and except to change and have lots of fun</p>
+            </div>
+            <div class="bar-two">
+                <h3>ADDRESS</h3>
+                <i class="fa fa-fw fa-map-marker-alt"></i> US, Texas ,Ca street<br>
+                <i class="fa fa-fw fa-envelope fa-fw"></i>&nbsp;Company.sa@email.com<br>
+                <!--<p><i class=""></i>+119897</p>-->
+            </div>
+            <div class="bar-three">
+                
+                <div class="com-style">
+                    <h3>Community</h3>
+                    <a href="#">Jobs</a>
+                    <a href="#">World</a>
+                    <a href="#">Trip</a>
+                    <a href="#">Blog</a></li>
+    
+                </div>
+            </div>
+        </div> 
+        <!--follow media-->   
+        <div class="follow ">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+    
+        </div>
+    </footer>
+</body>
+<script src="js/listPro1.js"></script>
+<script src="js/profile.js"></script>
+<!--<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>-->
+
+</html>

@@ -1,0 +1,154 @@
+body{
+    background: url("https://images.pexels.com/photos/1904769/pexels-photo-1904769.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")  center center fixed no-repeat;
+    background-size: cover;
+  
+  
+}
+
+.back-home{
+    min-width: 300px;
+    text-decoration: none;
+    font-size: 25px;
+    color:white;
+    font-weight: 700;
+    border-radius: 3px;
+    position: relative;
+    background:red;
+}
+.back-home:hover{
+    color: snow;
+
+}
+/*this style the whole outside  block position*/
+.styleForm {
+ 
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    justify-content: center;
+    
+}
+.styleForm > p{
+    width: 300px; /*we set the width to avoid long text be in new line*/
+   font-size: 23px;
+   color: white;
+   position: relative;/* if we didn't set position property the margin move the text to more space available*/
+   margin-right: 50px;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+   
+
+}
+.MessErorr{
+
+    width: 100%;
+}
+.MessErorr p{
+
+    color: red;
+    background-color:white;
+    display: block;
+    width: 100%;
+    font-size:19px;
+    text-align: center;
+}
+/*this style the whole items inside block*/
+.form{
+
+    /*blcok*/
+    width: 90%;
+    min-width:300px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    box-shadow: 7px 5px 9px 11px;
+  
+    
+}
+input{
+    height: 38px;
+    width: 350px;
+    border-radius: 5px;
+    font-size: 20px;
+    
+    
+}
+input:focus{
+    outline: none;
+}
+
+.style-button{
+    display:block;
+    padding: 12px;
+    margin-left: 30px;
+}
+.b{
+    display: block;
+    background:none;
+    width: 160px;
+    height:40px;
+    color: honeydew;
+    font-size: 20px;
+    margin: 12px;
+    border: 2px solid grey;
+   
+}
+.b:hover{
+    background-color:white;
+    color: black;
+
+}
+
+
+
+.age{
+    display: inline;
+    width: 350px;
+    height: 33px;
+    display: block;
+    font-size: 17px;
+    letter-spacing: 5px;
+    color: #999;
+
+  
+
+}
+
+.privacy  p{
+ 
+    display: block;
+    position: relative;
+    margin-top: 40px;
+    
+    
+    
+ 
+    
+}
+
+.privacy input[type=checkbox]{
+    position:absolute;/*we positoin checkbox to be inline all in the same row*/
+
+    width: 20px;
+    bottom:-11px;
+    left: -30px;
+    cursor: pointer;;
+
+
+    
+}
+#six{
+    font-size: 22px;
+    color: white;
+    font-weight: 900;
+}
+#six:hover{
+    color: rgba(0, 180, 90, 0.342);
+}
+.color-terms:hover{
+    color: blue;
+}
+/*The PERFECT 10 Minute Daily Posture Routine (FIX YOUR SIT!)*/

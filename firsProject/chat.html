@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/chat.css">
+    <link rel="stylesheet" type="text/css" href="css/head.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <title>Chat</title>
+</head>
+<body>
+    <div id="list-adress" class="style-list">
+        <a  id="end" class="end-Btn" onclick="closeList()" style="cursor: pointer;">&times;</a>
+        <a href="pro1.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="a.html">Sign In</a>
+        <a href="explore.html">explore</a>
+        <a href="about_us.html">About US</a>
+    
+    </div>
+    <span id="start" onclick="openList()" style="font-size: 40px;cursor: pointer;">&#9776;</span>
+    <div class="parent">
+        <div class="people-list" id="people-list">
+            <div class="search">
+                <input id="find" onkeyup="searchName()" type="text" placeholder="search..">
+                <i class="fa fa-search" style="font-size: 25px;"></i>
+            </div>
+            <ul class="list" id="list-chat">
+                <li class="clearfix" >
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_02.jpg" id="img-chat">
+                    <div class="about" >
+                        <div class="name">Ahmed.s</div>
+                        <div class="status">
+                            <i class="fa fa-circle online" ></i>online
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <img src="https://images.pexels.com/photos/5085245/pexels-photo-5085245.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" id="img-chat">
+                    <div class="about">
+                        <div class="name">Muraad</div>
+                        <div class="status">
+                            <i class="fa fa-circle online"></i>online
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <img src="https://images.pexels.com/photos/3520653/pexels-photo-3520653.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" id="img-chat">
+                    <div class="about">
+                        <div class="name">Keven</div>
+                        <div class="status">
+                            <i class="fa fa-circle offline"></i>offline
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <img src="https://images.pexels.com/photos/5397725/pexels-photo-5397725.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" id="img-chat">
+                    <div class="about">
+                        <div class="name">Jhon</div>
+                        <div class="status">
+                            <i class="fa fa-circle online"></i>online
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <img src="https://images.pexels.com/photos/5085820/pexels-photo-5085820.png?auto=compress&cs=tinysrgb&dpr=1&w=500" id="img-chat">
+                    <div class="about">
+                        <div class="name">Mike</div>
+                        <div class="status">
+                            <i class="fa fa-circle offline"></i>offline
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <img src="https://images.pexels.com/photos/4997831/pexels-photo-4997831.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" id="img-chat">
+                    <div class="about">
+                        <div class="name">thomas</div>
+                        <div class="status">
+                            <i class="fa fa-circle online"></i>online
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <img src="https://images.pexels.com/photos/4413741/pexels-photo-4413741.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" id="img-chat">
+                    <div class="about">
+                        <div class="name">Erica</div>
+                        <div class="status">
+                            <i class="fa fa-circle online"></i>online
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <img src="https://images.pexels.com/photos/4413741/pexels-photo-4413741.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" id="img-chat">
+                    <div class="about">
+                        <div class="name">Conan</div>
+                        <div class="status">
+                            <i class="fa fa-circle online"></i>online
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <img src="https://images.pexels.com/photos/4413741/pexels-photo-4413741.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" id="img-chat">
+                    <div class="about">
+                        <div class="name">Sara</div>
+                        <div class="status">
+                            <i class="fa fa-circle online"></i>online
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="chat-container">
+            <div class="chat-msg-header">
+                
+                <div class="chat-msg-header-img">
+                    <img src="https://images.pexels.com/photos/2129796/pexels-photo-2129796.png?auto=compress&cs=tinysrgb&dpr=1&w=500" id="img-chat">
+                </div>
+            <div class="state">
+                    <h4>AHMED.S</h4>
+                    <h6>3 Hours ago</h6>
+            </div>
+            <div class="chat-msg-header-icon">
+                <i class="fa fa-phone"></i>
+                <i class="fa fa-video-camera"></i>
+                <i class="fa fa-info-circle"></i>
+
+            </div>
+            </div>
+            <div class="chat-page">
+                <div class="msg-inbox">
+                    <div class="chats">
+                        <div class="msg-page">
+                            <div class="received-chats">
+                                <div class="received-chats-img">
+                                    <img src="https://images.pexels.com/photos/2129796/pexels-photo-2129796.png?auto=compress&cs=tinysrgb&dpr=1&w=500"  id="img-chat">
+                                </div>
+                                <div class="received-msg">
+                                    <div class="received-msg-inbox">
+                                        <p>we recive a</p>
+                                        <span class="time">11:01 PM | October 11</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--seond part masseger-->
+                            <div class="outgoing-chats">
+                                <div class="outgoing-chats-msg">
+                                    <p>we recive a list for a good time </p>
+                                    <span class="time">11:01 PM | October 11</span>
+                                </div>
+                                <div class="outgoing-chats-img">
+                                    <img src="https://images.pexels.com/photos/2129796/pexels-photo-2129796.png?auto=compress&cs=tinysrgb&dpr=1&w=500"  id="img-chat">
+                                </div>
+                            </div>
+                            <!--fisrt part messager-->
+                            <div class="received-chats">
+                                <div class="received-chats-img">
+                                    <img src="https://images.pexels.com/photos/2129796/pexels-photo-2129796.png?auto=compress&cs=tinysrgb&dpr=1&w=500"  id="img-chat">
+                                </div>
+                                <div class="received-msg">
+                                    <div class="received-msg-inbox">
+                                        <p>how was the items inside a list </p>
+                                        <span class="time">11:01 PM | October 11</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--seond part masseger-->
+                            <div class="outgoing-chats">
+                                <div class="outgoing-chats-msg">
+                                    <p>not too, bad it's good FY </p>
+                                    <span class="time">11:01 PM | October 11</span>
+                                </div>
+                                <div class="outgoing-chats-img">
+                                    <img src="https://images.pexels.com/photos/2129796/pexels-photo-2129796.png?auto=compress&cs=tinysrgb&dpr=1&w=500"  id="img-chat">
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="msg-bottom">
+                    <div class="bottom-icons">
+                        <i class="fa-fa-plus-circle"></i>
+                        <i class="fa fa-camera"></i>
+                        <i class="fa fa-microphone"></i>
+                        <i class="fa fa-smile-o"></i>
+
+                    </div>
+                    <div class="input-group">
+                        <input onkeypress="autoHighAdjust(this)" onkeyup="autoHighAdjust(this)" type="text" class="form-control" placeholder="write messages....">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="fa fa-paper-plane"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--<footer>
+        <div class="main-bar">
+            <div class="bar-one">
+                <h3>About Us</h3>
+                <p>We are some helper that love 
+                    building things for people and
+                except to change and have lots of fun </p>
+            
+            </div>
+                
+            <div class="bar-two">
+                <h3>ADDRESS</h3>
+                <i class="fa fa-fw fa-map-marker-alt"></i> US, Texas ,Ca street<br>
+                <i class="fa fa-fw fa-envelope fa-fw"></i>&nbsp;Company.sa@email.com<br>
+                <!--<p><i class=""></i>+119897</p>-->
+            </div>
+            <div class="bar-three">
+                
+                <div class="com-style">
+                    <h3>Community</h3>
+                    <a href="#">Jobs</a>
+                    <a href="#">World</a>
+                    <a href="#">Trip</a>
+                    <a href="#">Blog</a></li>
+
+                </div>
+            </div>
+        </div> 
+        <!--f      <div class="bar-one">
+                <h3>About Us</h3>
+                <p>We are some helper that love 
+                    building things for people and
+                except to change and have lots of fun </p>
+            </div>ollow media
+        <div class="follow ">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+
+        </div>
+    </footer>-->
+
+</body>
+<script src="js/listPro1.js"></script>
+<script src="js/chat.js"></script>
+</html>

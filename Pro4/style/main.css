@@ -1,0 +1,242 @@
+html {
+  --bg: white;
+  --bg-panel: #EBEBEB;
+  --bg-content:#eee;
+  --color-headings: #3694FF;
+  --color-text:#333333;
+  --color-text-code:#000;
+  --bg-code:lightgrey;
+  --color-header:#333333;
+
+}
+
+html[data-theme=dark] {
+  --bg: #333333;
+  --bg-panel: #434343;
+  --bg-content:#1D2228;
+  --color-headings: #3694FF;
+  --color-text:#9370DB;
+  --color-text-code:black;
+  --bg-code:#eee;
+  --color-header:white;
+
+  
+}
+
+body {
+  background: var(--bg);
+  min-width: 290px;
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.5;
+
+}
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-color: rgba(0, 22, 22, 0.4);
+}
+
+header {
+  color: var(--color-header);
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: thin;
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+}
+
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+#navbar a {
+  color: var(--color-header);
+  display: block;
+  padding: 10px 30px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#navbar a:hover {
+  color: red;
+}
+
+.afterclick {
+  color: red;
+  font-weight: 600;
+}
+
+#main-doc {
+  background: var(--bg-content);
+  color: var(--color-text);
+  font-weight: 500;
+  font-size: 19px;
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+section article {
+  margin: 15px;
+  font-size: 0.96em;
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  color: var(--color-text-code);
+  background: var(--bg-code);
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+
+  #navbar {
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 12px 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  .toggle-container {
+    position: relative;
+    z-index: 99;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+}
+input[type=checkbox] {
+  margin: 20px 12px;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 52px;
+  height: 27px;
+  background: grey;
+  float: right;
+  border-radius: 100px;
+  position: relative;
+}
+
+label:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+input:checked + label {
+  background: var(--color-headings);
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 45px;
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+   transition: all .15s ease;
+}
+
+.tool {
+  position: relative;
+  display: inline-block;
+  float: left;
+  top: -3vw;
+}
+
+.tool .text-hover {
+  visibility: hidden;
+  width: 300px;
+  height: auto;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+
+.tool:hover .text-hover {
+  visibility: visible;
+}
+
+/*# sourceMappingURL=main.css.map */

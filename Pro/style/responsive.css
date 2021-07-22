@@ -1,0 +1,19 @@
+@media (max-width: 460px) {
+  h1 {
+    font-size: 3.5;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 460px) {
+  #main {
+    margin: 0;
+  }
+}
+
+@media (max-width: 460px) {
+  #img-caption {
+    font-size: 1.4rem;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

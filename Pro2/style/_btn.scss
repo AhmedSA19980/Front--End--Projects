@@ -1,0 +1,18 @@
+@import './vars';
+
+button {
+  border: none;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background:map-get($Color, 'color-darkgray' ) ;
+  color: inherit;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.submit-button:hover{
+    background-color:map-get($Color, 'color-green' )  ;
+}

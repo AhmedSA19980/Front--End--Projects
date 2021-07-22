@@ -1,0 +1,281 @@
+.about{
+    padding-bottom: 2rem;
+
+    &_bio-image{
+        height: 50vh;
+        width: 100%;
+        background: 
+        linear-gradient(
+            to bottom,
+            rgba($primary-color, 0.9),
+            rgba($primary-color, 0.3),
+            ),
+        url("../img/code.jpg") center ;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+
+
+        p{
+            margin-bottom: 2rem;
+        }
+    }
+
+    &_bio {
+        width: 80%;
+        text-align: center;
+          
+
+        .text-secondary {
+            padding-bottom: 1rem;
+ 
+          
+        }
+    }
+
+
+    .jobs {
+        width: 60vw;
+        max-width: 100%;
+        margin: 2rem auto 0 auto;
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-gap: 2rem;
+             
+
+        &__job {
+           
+            background-color: rgba(255,255,255,0.1);
+            box-shadow: 20px 20px 80px rgba(0,0,0,0.5);
+            color: $forth-color;
+            padding: 0.9rem;
+            border-radius: 12px;
+            
+
+            .text-secondary:first-child {
+                font-weight: 900;
+               
+
+                &:before, &:after{
+                    content: '';
+                    position:absolute;
+                    bottom: -2px;
+                    z-index: -1;
+                    background: #fff;
+                }
+                
+            }
+
+     
+            p{
+                text-align: center;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-weight: 400;
+                font-size: 20px;
+                padding: 16px 20px;
+                
+            }
+            h2, h3 {
+                margin: 0.5rem 0;
+                padding: 12px 16px;
+            }
+            
+        
+            h6 {
+                margin: 0.3rem 0;
+               
+            }
+           
+        }
+        
+
+        &__name{
+             margin: 2vw 12px;
+             font-size: 24px;  
+        }   
+
+
+        &__skill{
+            background-color: rgba(255,255,255,0.1);
+            box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            margin: 3vw 0;
+            backdrop-filter: blur(5px);
+
+
+            ul li{
+                list-style: none;
+                font-size: 20px;
+                padding:12px 14px ;
+               
+            }
+
+
+            .bar{
+                height: 19px;
+                padding: 0 12px;
+                margin-bottom: 15px;
+               
+
+                &::before{
+                    content: '';
+                    display: inline-block;
+                    background: white;//map-get($A-color , 'Deep-Sky-Blue' );
+                    box-shadow: 0 0 10px map-get($A-color,'white' ),
+                        0 0 20px map-get($A-color,'white' ),
+                        0 0 40px map-get($A-color,'white' );
+                       
+                    padding: 12px 0;
+                    animation: load 3s 0s;
+                    border-radius: 10px;
+                }
+
+
+                &.bar-color1::before{
+                   width: calc(90% - 20px);
+               }
+
+
+                &.bar-color2::before{
+                   width: calc(85% - 20px);
+               }
+
+
+                &.bar-color3::before{
+                   width: calc(95% - 20px);
+               }
+
+
+                &.bar-color4::before{
+                   width: calc(87% - 20px);
+               }
+
+
+                &.bar-color5::before{
+                   width: calc(60% - 20px);
+               }
+
+
+                &.bar-color6::before{
+                   width: calc(30% - 20px);
+               }
+              
+            }
+             
+
+
+        }
+    }
+
+
+    .social-icons {
+        display: flex;
+        flex-direction: column;
+    }
+   
+
+    footer {
+        transform: rotate(90deg)
+        translate(-3rem, -5rem)
+        ;
+    }
+
+}
+
+
+.border-bottom{
+
+ margin: 3vw 0;
+ position: relative;
+}
+
+
+.border-bottom::after{
+    content: '';
+    height: 5px;
+    width: 50%;
+    border-radius: 12px;
+    color: white;
+    left: calc(30% - 20px);
+    position:absolute;
+    bottom: 0;
+    background: linear-gradient(300deg,#8693ab,#bdd4e7
+    );
+    animation: walk 3s 0s alternate; 
+}
+
+
+@keyframes walk {
+    0%{
+        width: 0;
+    }
+    15%{
+        width: 10%;
+    }
+    30%{
+        width: 20%;
+    }
+    60%{
+        width: 35%;
+    }
+    100%{
+        width: 50%;
+    }
+    
+}
+
+.avatar{
+  
+   margin-bottom: 3vw;;
+    border-radius:50% ;
+    width: 200px;
+    height: 200px;
+    max-width: 100%;
+    transition: 0.3s ease-in-out;
+    animation: shine1 1s forwards,blink1 2.1s 2s alternate;
+}
+
+
+
+@keyframes blink1 {
+  0%,
+  22%,
+  36%,
+  75% {
+      box-shadow: 0 0 0.6rem map-get($A-color, 'white' ), 0 0 1.5rem map-get($A-color, 'white' ),
+      -0.2rem 0.1rem 1rem map-get($A-color, 'white' ), 0.2rem 0.1rem map-get($A-color , 'white' ),
+      0 -0.5rem 2rem map-get($A-color , 'Deep-Sky-Blue' ), 0 0.5rem 3rem map-get($A-color, 'Deep-Sky-Blue'); 
+  }
+  28%,
+  33% {
+    color: map-get($A-color , 'gold-y' );
+    
+  }
+  82%,
+  97% {
+    color:map-get($A-color, 'white' ) ;
+
+  }
+}
+
+
+@keyframes shine1 {
+  0%{color: map-get($A-color, 'white' );}
+ 
+  100% {
+        box-shadow: 0 0 0.6rem #2ecc71, 0 0 1.5rem map-get($A-color, 'white' ),
+      -0.2rem 0.1rem 1rem map-get($A-color, 'white' ), 0.2rem 0.1rem 1rem #2ecc71,
+      0 -0.5rem 2rem #2ecc71, 0 0.5rem 3rem #2ecc71; 
+    }
+}
+
+
+@keyframes load{
+    from{
+        width: 0%;
+    }
+}

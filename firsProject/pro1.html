@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/pro1.css">
+        <link rel="stylesheet" type="text/css" href="css/head.css">
+    
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    </head>
+<body >
+<!--here we get the list adrees-->    
+<div id="list-adress" class="style-list">
+    <a  id="end" class="end-Btn" onclick="closeList()" style="cursor: pointer;">&times;</a>
+    <a href="a.html">Sign In</a>
+    <a href="profile.html">Profile</a>
+    <a href="explore.html">Explore</a>
+    <a href="about_us.html">About US</a>
+
+</div>
+<div class="contact-user" style="background:linear-gradient(350deg,#e65245,#e43a15) ">
+    <div class="btn-form" >
+        <a href="#"  id="" onclick="popup()" >LOG IN</a>
+    </div>
+</div>
+<span id="start" onclick="openList()" style="font-size: 40px;cursor: pointer;">&#9776;</span>
+
+
+<diV id="con-form-pro" class="cont-form-pro"><!--check in form first, if you signed or not-->
+    <form class="form-pro " action="#" target="_self" method="POST">
+        <div class="cont-log">
+            <span class="close" id="close1" 
+            style=" right: 5px;top: 0;
+            color:white;font-size: 35px;font-weight: bold;cursor: pointer;position: relative;left: 200px;">&times</span>
+            <h3>log in</h3>
+        </div>
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="example@gamil.com"  >
+
+        <label for="password">Password</label>
+        <input id="password" type="password" ><br>
+        <button id="first-btn" type="submit">continue</button><br><hr style="width: 100%;"><br>
+        <button id="btn-one" type="button"><i  class='fab fa-google' style="float: left;font-size: 30px;"></i>continue with gmail</button>
+        <button id="btn-two" type="button"><i class="fab fa-facebook" style="color: rgba(24, 102, 219, 0.438);float: left;font-size: 30px;"></i>continue facebook</button>
+        <p style="align-self:flex-start;">Don't have account?<a href="#">sign in</a></p>
+    </form>
+        
+</diV>
+<!--main content-->
+<div>
+    <div class="content">
+        <!--img-->
+        <div class="img-content">
+            <div class="img-content1">
+                <h4>Full Nice experience to changed </h4>
+                <h2>Learn to Say i love you thw world </h2>
+            </div>
+            <div id="background">
+                <div  class="container-box">
+                    <input type="text" placeholder="Distination">
+                    <input type="text" placeholder="Loction">
+                    <!--problem here , make selected box-->
+                    <div class="selected-box">
+                        <select>
+                            <option  value="0">Select experience</ooption>
+                            <option value="1">Trip</option>
+                            <option value="2">Flight</option>
+                            <option value="3">Cooking</option>
+                            <option value="4">Meet people</option>
+                        </select>
+                    </div>
+                    <!--end problem-->
+                    <button type="subm
+                    it" class="btn-sub">Submit</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--8 photo width descrition-->
+    <div class="main-content">
+        <div class="text-content">
+            <h2>Destinations for future trips</h2>
+            <p>Best Ideas to you mind come and discover here</p>
+        </div>
+        <div class="main-grid">
+            <div class="item-grid">
+                <img id="img" src="https://images.pexels.com/photos/704569/pexels-photo-704569.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                <div class="text-grid">
+                    <p>this dish had a lot to give us more energy </p>
+                    <div class="desc-grid">
+                        <p>what desh is you favorite and why you love it</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item-grid1">
+                <img id="img" src="https://images.pexels.com/photos/1042828/pexels-photo-1042828.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"  height="59%">
+                <div class="text-grid">
+                    <p>this dish had a lot to give us more energy </p>
+                    <div class="desc-grid">
+                        <p>what desh is you favorite and why you love it</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item-grid2">
+                <img id="img" src="https://images.pexels.com/photos/1927595/pexels-photo-1927595.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                <div class="text-grid">
+                    <p>this dish had a lot to give us more energy </p>
+                    <div class="desc-grid">
+                        <p>what desh is you favorite and why you love it</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item-grid3">
+                <img id="img" src="https://images.pexels.com/photos/3333923/pexels-photo-3333923.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                <div class="text-grid">
+                    <p>this dish had a lot to give us more energy </p>
+                    <div class="desc-grid">
+                        <p>what desh is you favorite and why you love it</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item-grid4">
+                <img id="img" src="https://images.pexels.com/photos/5946/books-yellow-book-reading.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                <div class="text-grid">
+                    <p>this dish had a lot to give us more energy </p>
+                    <div class="desc-grid">
+                        <p>what desh is you favorite and why you love it</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item-grid5">
+                <img id="img" src="https://images.pexels.com/photos/1164985/pexels-photo-1164985.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                <div class="text-grid">
+                    <p>this dish had a lot to give us more energy </p>
+                    <div class="desc-grid">
+                        <p>what desh is you favorite and why you love it</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item-grid6">
+                <img id="img" src="https://images.pexels.com/photos/3937174/pexels-photo-3937174.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                <div class="text-grid">
+                    <p>this dish had a lot to give us more energy </p>
+                    <div class="desc-grid">
+                        <p>what desh is you favorite and why you love it</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item-grid7">
+                <img id="img" src="https://images.pexels.com/photos/4665930/pexels-photo-4665930.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                <div class="text-grid">
+                    <p>this dish had a lot to give us more energy </p>
+                    <div class="desc-grid">
+                        <p>what desh is you favorite and why you love it</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <!--add pignation-->
+    <div class="pignation">
+            <a href="#"><i class="fas fa-arrow-alt-circle-left"></i></a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+           <a href="#"><i class="fas fa-arrow-alt-circle-right"></i></a>
+         
+    </div>
+</div>
+<!--add description-->
+<div class="desc-services">
+    <div class="first-para">
+        <h1>Looking <span style="color:goldenrod;">for new exp</span>erience</h1>
+        <p>what we do and what we offer.
+            We are lorem ipsum consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna 
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+            ullamco laboris<span > nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+            sint occaecat cupidatat non proident, sunt in culpa qui 
+            officia deserunt mollit anim id est laborum consectetur 
+            adipiscing elit, sed do eiusmod tempor</span> incididunt ut 
+            labore et dolore magna aliqua. Ut enim ad minim veniam, 
+            quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+    </div>    
+    <div class="two-button"><!--javacrpt display-->
+        <button ​  class="info-btn"   id="open">Contact</button>
+       <!-- <button type="button" onclick="openNewsLetter()"class="info-btn" >News letter</button>-->
+
+    </div>
+</div>
+<!--animation form or pop up-->
+<div id="first-form">
+    <form  class="first-form animate"  method="POST">
+        <div class="imgContainer-Form">
+            <span class="close" id="Close-form" style=" right: 5px;top: 0;
+            color:white;font-size: 35px;font-weight: bold;cursor: pointer;">&times</span>
+            <!--<img src="https://images.pexels.com/photos/1742783/pexels-photo-1742783.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">-->
+            <h3>What You Face Is Important To Us</h3>
+            <h4>Explain What Is Important To You</h4>
+        </div>
+        <div class="form-container">
+            <div class="form-one" >
+                <input id="same-form1" type="text" placeholder="Name">
+                <input id="same-form2" type="email" placeholder="Email" style="border-radius: 12px;" required>
+                <input id="same-form3" type="text" placeholder="Subject">
+                <textarea placeholder="What is in your minds...!" wrap="hard" required></textarea>
+                <button class="info-btn" type="submit" onclick="submitFormone()" id="subForm">submit</button>
+
+            </div>
+        </div>
+    </form>
+</div>    
+
+<div class="form-two">
+    <div style="text-align: center;">
+        <h1> Join Our News Letter</h1>
+        <p >To find things sutibale and makes you comfrotable</p>
+    </div>
+    <div class="con-form">
+        <div class="con-form-two">
+            <label >Email</label>
+            <input id="email" type="email" required>
+            <button id="submit-arrow" type="submit"><i class="fas fa-location-arrow" style="color: white;"></i></button>
+            
+        </div>
+    </div>        
+</div>
+
+
+<!--add price card 
+<div class="content-card">
+    <div class="text-card">
+        <h2>Pricing</h2>
+        <p>Choose best plan for you trip</p>
+    </div>
+    <div class="display-card">
+        <div class="card-1">
+            <div class="desc-card">
+
+            </div>
+        </div>
+        <div class="card-1"></div>
+        <div class="card-1"></div>
+
+    </div>
+</div>-->
+<!--experience explaining-->
+<section>
+    <div class="logo-dis"></div>
+    <div class=exp1">
+        <div class="ex-title">
+            <h1>3 Steps to start Experience</h1>
+        </div>
+        <div class="exp">    
+            <div class="ex-section-one">
+                <h2 id="ex-num">1</h2>
+                <h3>Find you experience</h3>
+                <div class="ex-section-desc">
+                    <p>Define one of the experience that
+                        you love and wanted to do it.
+                    </p>
+                </div>
+                <div class="new-page"  >
+                    <a href="#">Are you Change your mind</a>
+                </div>
+            </div>
+            <div class="ex-section-two">
+                <h2 id="ex-num">2</h2>
+                <h3>Decide where you want to go </h3>
+                <div class="ex-section-desc">
+                    <p>Define a time and place 
+                        and date.
+                    </p>
+                </div> 
+            </div>
+            <div class="ex-section-three">
+                <h2 id="ex-num">3</h2>
+                <h3> Welcome your Experience</h3>
+                <div class="ex-section-desc">
+                    <p>Once your listing is live,  your with your experience. 
+                        You can message them with any questions before their stay.
+                    </p>
+                </div>
+                
+            </div>
+            <div class="new-page1"><!--i repeat this block here cuse this block 
+            inside section one which mean if order it it not gonna be in last position i have to move the whole section one 
+        , if we order it moves inside section one not in thw whole three section-->
+                <a href="#">Are you Change your mind</a>
+            </div>
+        </div>   
+    </div>
+</section>
+<footer>
+    <div class="main-bar">
+        <div class="bar-one">
+            <h3>About Us</h3>
+            <p>We are some helper that love 
+                building things for people and
+            except to change and have lots of fun </p>
+        
+        </div>
+        <div class="bar-two">
+            <h3>ADDRESS</h3>
+            <i class="fa fa-fw fa-map-marker-alt"></i> US, Texas ,Ca street<br>
+            <i class="fa fa-fw fa-envelope fa-fw"></i>&nbsp;Company.sa@email.com<br>
+            <!--<p><i class=""></i>+119897</p>-->
+        </div>
+        <div class="bar-three">
+            
+            <div class="com-style">
+                <h3>Community</h3>
+                <a href="#">Jobs</a>
+                <a href="#">World</a>
+                <a href="#">Trip</a>
+                <a href="#">Blog</a></li>
+
+            </div>
+        </div>
+    </div> 
+        <!--<div class="bar-one">
+            <h3>About Us</h3>
+            <p>We are some helper that love 
+                building things for people and
+            except to change and have lots of fun </p>
+            ollow media
+        </div>-->
+        
+    <div class="follow ">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+
+    </div>
+</footer>
+
+</body>  
+<script src="js/listPro1.js"></script>  
+<script src="js/pro1.js"></script>
+</html>

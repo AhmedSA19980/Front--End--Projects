@@ -1,0 +1,265 @@
+*{
+    box-sizing: border-box;
+}
+.style-list{
+
+    height: 0;
+    background-color: #333;
+    width: 100%;
+    position: fixed;
+    transition: 0.5s;
+    z-index: 99;/* i put this number casue for explore page there's some section apear over the list*/
+    top:0;
+    left: 0;
+    overflow: hidden;
+    padding-top: 0;
+  
+  
+}
+.style-list  > a{
+    display: block;
+  
+    color:white;
+    transition: 0.2s;
+    font-weight: 500;
+    font-size: 30px;
+    margin-left:20px ;
+    padding: 12px 8px 6px 7px ;
+    text-decoration:none;/*i did text decoration in both main a and hover casue this not work fo chat page when you hover the a tag it show border bottom*/
+     
+  
+  
+      
+}
+.style-list a:hover{
+  color:goldenrod;
+  text-decoration: none;/*i did text decoration in both main a and hover casue this not work fo chat page when you hover the a tag it show border bottom*/
+      
+      
+}
+.end-Btn{
+    float:right;
+    margin-top: 0px;
+      
+}
+  
+.end-Btn .style-list{
+    position: absolute;
+    top:0;
+    right: 30px;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+
+footer{
+    margin-top: 30%;
+    background: #333;
+}
+.main-bar{
+   
+
+    display: flex;
+    justify-content:space-around;
+    color: white;
+    margin: 0 auto;
+}
+.main-bar h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-bar p{
+    font-size: 20px;
+
+}
+.bar-one{
+    flex-basis: 230px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 1em;
+
+}
+.bar-two{
+
+   flex-basis: 170px;
+   flex-grow: 1;
+   flex-shrink: 1;
+   margin:1em;
+}
+.bar-three{
+    flex-basis: 170px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    color: white;
+    margin-top: 1.5em;
+
+   
+}
+.bar-two i{
+    padding: 19px;
+    margin-left: -15px;
+}
+
+.com-style{
+    align-self: center;
+    padding: 13px;
+    margin-top: -20px;
+}
+.com-style a{
+    display: block;
+    text-decoration: none; /*i did text decoration in both main a and hover casue this not work fo chat page when you hover the a tag it show border bottom*/
+    color: white;
+    padding: 6px;
+    font-size:20px; 
+}
+.com-style a:hover{
+    color: goldenrod;
+    transition: all 3s;
+    text-decoration: none;/*i did text decoration in both main a and hover casue this not work fo chat page when you hover the a tag it show border bottom*/
+   
+
+
+}
+
+.follow  {
+    margin-left: 40%;
+
+    
+}
+.follow a{
+    color: white;
+}
+.follow i{
+    padding: 12px;
+    text-decoration: none;
+    font-size: 30px;
+}
+.follow i:hover{
+    color:green;
+}    
+
+@media (max-width:720px) {
+    .main-bar{
+        
+        flex-direction: column;
+   
+    }
+    .bar-one, .bar-two,.bar-three{
+        border-bottom: 3px solid white;
+        
+    }
+    .bar-three, .bar-two i{
+        padding: 16px;/* seprate these two classes , cause we need to space the border */
+
+    }
+}
+
+
+
+.contact-user{
+    width: 110px;
+    height: 30px;
+    background: hsla(341, 31%, 82%, 0.959);
+    position: absolute;
+    top: 1.3em;
+    right: 13px;
+    border-radius:12px ;
+    
+
+}
+.btn-form{
+    text-align: center;
+
+}
+.btn-form a{
+    font-family:'Times New Roman', Times, serif;
+    text-decoration: none;
+    
+    font-size: 25px;
+    color: white;
+   
+}
+.cont-form-pro{
+    display: none;
+    position:fixed;
+    top: 70px;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    background: none;
+    /*max-width: 600px;*/
+   
+    /*background-color: rgb(0,0,0);  Fallback color */
+    /*background-color: rgba(0,0,0,0.4);  Black w/ opacity */
+    color: white;
+    margin: auto 0;
+    
+
+
+}
+@media (max-width:500px){
+    .contact-user{
+        position: absolute;
+        right: 40px;
+    }
+}
+.form-pro{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 400px;
+    margin: 0 auto;
+    background: #abe4e4;
+    color: black;
+
+   
+    
+}
+.form-pro label{
+    width: 20px;
+   /* color:;*/
+    font-size: 20px;
+    align-self: flex-start;
+    padding: 12px;
+}
+.form-pro a, p {
+    text-decoration:none;
+    font-size: 17px;
+    padding-left:12px ;
+}
+.form-pro input,input[type=email] {
+    width: 89%;
+    height: 35px;
+    font-size: 20px;
+}
+
+
+#btn-one, #btn-two {
+    color: white;
+    width: 70%;
+}
+#btn-one:hover,#btn-two:hover{
+    background: rgb(240, 205, 154);
+}
+#first-btn{
+    background: rgb(224, 129, 142);
+    width: 110px;
+    padding-top: 3px;
+    color: white;
+
+}
+#first-btn:hover {
+    background: #abe4e4;
+    color: black;
+}
+
+.form-pro > button{ 
+    width: 100%;
+    height: 50px;
+    background:none;
+    margin: 3px;
+    padding: 6px;
+    border-radius: 12px;
+    font-size: 20px;
+}

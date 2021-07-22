@@ -1,0 +1,120 @@
+
+.home{
+    height: 100%;
+    padding-top:40vh ;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    background: 
+    linear-gradient(
+        to left,
+        rgba($primary-color, 0.9),
+        rgba($primary-color, 0.3),
+        ),
+    url("../img//index.jpg") center ;
+    background-size: cover;                                                                                                       
+
+    &__name {
+        font-size: 5rem;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid set-text-color($primary-color);
+        
+        &--last{
+            color: $third-color;
+            font-weight: 700;
+            animation: glow-text 2s forwards, blink 3s 2s 1;
+             
+        }
+
+    }
+}
+
+.top-left {
+    position: absolute;
+    top: 120px;
+    left: 30px;
+    font-size: 30px;
+    
+}
+
+h1{
+    //animation: glitch 1s linear infinite;
+     background-image: radial-gradient(
+    ellipse 20% 50% at 50% 50%,
+    #6b1839,
+    transparent
+  );
+  animation: glow-text 2s forwards,  3s infinite;
+}
+
+.flick{
+    color:  $third-color;
+     animation: glow-text 2s forwards, blink 3s 2s  ;
+}
+
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color:map-get($A-color, 'white' ) ;
+      text-shadow:$text-shadow;
+  }
+  28%,
+  33% {
+    color: map-get($A-color , 'pink' );
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color:map-get($A-color, 'white' ) ;
+    text-shadow: none;
+  }
+}
+
+.flick {
+  animation: glow-text 1s forwards, blink 3s 2s 1;
+}
+
+
+
+@keyframes glow-text {
+  0% {
+    color:#6b1839;
+    text-shadow: none;
+  }
+  100% {
+    color: map-get($A-color, 'white' );
+      text-shadow:$text-shadow;
+  }
+}
+
+
+
+
+.tool {
+  position: absolute;
+  display: inline-block;
+  float: left;  
+  z-index: 9;
+
+
+}
+.tool .text-hover {
+ visibility: hidden;
+  width: 200px;
+
+  color:$forth-color;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+
+.tool:hover .text-hover {
+  visibility: visible;
+}

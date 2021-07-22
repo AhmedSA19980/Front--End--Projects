@@ -1,0 +1,907 @@
+
+.icon{
+    width: 200px;
+    display: inline-block;
+    height: 30px;
+    position:absolute;
+    right: -9px;
+    top: 12px;
+}
+.icon a{
+    width: 100px;
+    text-align: center;
+    font-size: 25px;
+    text-decoration: none;
+    background: linear-gradient(370deg,black, green);
+    color: white;
+    border-radius: 12px;
+}
+.icon i {
+    font-size: 20px;
+    padding: 3px 5px;
+}
+.icon i:hover{
+    background: lightgray;
+    cursor: pointer;
+}
+.display-img{
+    width: 100%;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    
+    flex-wrap: wrap;
+    
+ 
+ 
+}
+.display-img img{
+    width:200px;
+    min-width: 10%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.display-img iframe{
+    width:200px;
+    min-width: 10%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.swiper-container1{
+    display: none;
+    overflow-x: hidden;
+}
+#one{
+    display:none ;
+    
+}
+
+@media (max-width:660px){
+    .display-img{
+        display: none;
+    }
+    .swiper-container1 {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        background: none;
+        position: relative;/*becasue when we want to diplay menu the photo still appear over the menu */
+        top: 0;
+        left: 0;
+        z-index: 0;/*mean not showing over the menu */
+    
+    
+    }
+    .swiper-wrapper{
+        width: 100%;
+        
+        
+    }
+  
+    .swiper-slide {
+   
+        text-align: center;
+        font-size: 18px;
+        
+  
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        
+    }
+    .swiper-slide img,iframe {
+    height: 400px;
+        
+        
+    
+        
+        object-fit: cover;
+    }
+    #one{
+        display:block;
+    }
+
+}
+
+
+
+.cnt-ex {
+    width: 200px;
+    background: linear-gradient(340deg,lime, yellow);
+    border-radius: 12px;
+    position:absolute;
+    text-decoration: none;
+    text-align: center;
+    right: 3%;
+    margin-top: 26px;
+    padding: 5px;
+}
+.cnt-ex:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+.detail-sec{
+
+    
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2em auto;
+    border-bottom: 1px solid grey;
+   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)*/
+}
+
+.desc-ex h3{
+    padding: 13px;
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+.desc-ex p{
+    width: 60%;
+    min-width: 500px;
+    font-size: 20px;
+    padding: 13px;
+    border-bottom: 1px solid lightgrey;
+}
+.detail-sec a{
+    margin-left: 5px;
+    font-size: 20px;
+    color: black;
+}
+.more-desc{
+    
+    width: 40%;
+    min-width: 500px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 14px;
+    padding: 13px 17px;
+    
+}
+.more-desc span{
+    padding-left: .5em;
+    font-size: 20px;
+}
+.more-desc i {
+    width: 290px;
+    
+}
+
+.card-ex {
+    
+    max-width:100%;/* i use 100% to make purchased card in  full screen poisition when rezise the window to make to responsive */
+    min-width: 250px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    align-self: flex-start;
+    margin-right:1% ;
+    margin-top:9em ;
+}
+.card-ex h3 {
+    
+    text-align: center;
+    margin-left: 15px;
+    font-size: 30px;
+}
+.card-ex span{
+    font-size: 23px;  
+    color: #999;
+}
+.card-ex a{
+    
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    
+    
+}
+.card-ex button {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 20px;
+    background:linear-gradient(440deg, #8e2de2, #4a00e0 );
+    margin-top:10px ;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+}
+
+
+.card-ex a:hover, button:hover{
+    color: #9999;
+}
+.simil-ex{
+    
+    margin-top:19px ;
+    border: 1px solid #999;
+    display: flex;
+    padding: 14px 12px;
+}
+@media (max-width:790px){
+    .detail-sec , .more-desc {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        
+    }
+    .more-desc i , span{
+        padding: 8px 6px;
+        width: 400px;
+    }
+    .desc-ex p{
+        width: 90%;
+        min-width: 100px;
+        margin-left: 4%;
+    }
+    .cnt-ex {
+    
+        bottom:5px;
+    
+        width: 90px;
+        height: 45px;
+        margin-top: 13px;
+        background: none;
+        border: 1px solid red;
+        border-radius: 8px;
+        position: fixed;
+        text-decoration: none;
+    
+        
+        right: 3%;
+        z-index: 5;
+        
+    }
+    .card-ex{
+        width: 100%;
+        height: 7%;
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        bottom: 0;
+        z-index: 3;
+        background: white;
+    
+        border: 1px solid red;
+    }
+    .card-price a , h3 , span{
+        font-size: 15px;
+        
+    }
+    #card-price   {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .card-price h3 , span{
+        margin-top: 3px;
+    }
+    .card-price a {
+        margin-top: -26px;
+    }
+    .card-ex p,.simil-ex{
+        display: none;
+    }
+    .card-ex button {
+        width: 20%;
+    
+
+    }
+}
+.option-sec{
+    width: 400px;
+    align-self: center;
+    /*z-index: 1;
+    position:absolute;*/
+    font-size: 20px;
+    /*border: 2px solid red;**/
+}
+.option-sec p{
+    color:blueviolet;
+
+}
+.dropDown{
+    border: 2px solid hotpink;
+}
+
+.item-select{
+    height: 50px;
+    width: 13em;
+    padding: 12px;
+    color: black;
+    border: 2px solid lightgray;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    background:linear-gradient(400deg, blue, hotpink) ;
+}
+.item-select h3{
+    margin-top: -.2em;
+    color: white;
+    padding-left: 5px;
+    font-size: 24px;
+    text-decoration: none;
+}
+.item-select1{ 
+    color:white;
+    padding-left: 5px;  
+    height: 50px;
+    width: 260px;
+    padding: 12px;
+    color: black;
+    border: 2px solid lightgray;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    background:linear-gradient(400deg, blue, hotpink) ;
+    z-index: 99;
+    
+    
+}   
+.item-select1 select {
+    display: none;
+    
+    
+}
+
+
+
+.select-selected {
+  background-color:linear-gradient(300deg, blue, red);
+  
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): 
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}*/
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color:black;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  font-size: 23px;
+  margin-top: -13px;/*position of selected box*/
+}
+
+/* Style items (options):*/ 
+.select-items {
+  width:220px ;
+  border-radius: 30px;
+  height: auto;
+  background: white;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-left: -1em;
+  top:13px ;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  flex-shrink: 1;
+}
+
+ /*Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+  
+  
+  
+
+.option-sec h2{
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.option-sec p{
+    font-size: 26px;
+}
+.daynamic-background{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 15px 12px;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+.bck-img{
+    width: 60%;
+    height: 700px;
+    display: flex;
+    
+    flex-direction: row;
+    
+    
+}
+.bck-img {
+    /*border: 3px solid hotpink;*/
+   /*background: linear-gradient(400deg, blue, hotpink);*/
+}
+.bck-img >  div  {
+
+    
+    margin-right:30px ;
+    margin-top: 8px;
+    
+    border-radius: 12px;
+    
+    
+    
+    
+}
+#one-ex{
+    width: 190px;
+    height: 260px;
+}
+#two-ex{
+    width: 190px;
+    height: 260px;
+    
+}
+.img-b1{
+    background: url("https://images.pexels.com/photos/2775862/pexels-photo-2775862.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")  center center no-repeat;
+
+    align-self: center;
+    flex-shrink: 0;
+    
+}
+.img-b2{
+    background: url("https://images.pexels.com/photos/3011520/pexels-photo-3011520.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500") center center no-repeat;
+    align-self: center;
+   /* flex-basis: 30px;*/
+    flex-shrink: 0;
+    
+    margin-bottom: 14em;/* we do margin bottom cause we have avialble scpase*/
+    
+}
+.img-b3{
+    background: url("https://images.pexels.com/photos/3131819/pexels-photo-3131819.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500") center center no-repeat;
+    flex-shrink: 0;
+   /* flex-basis: 250px;*/
+    align-self: flex-end;
+    
+    margin-left:-14em ;
+    margin-bottom:3.4em;
+    
+    
+}
+.img-b4{
+    background: url("https://images.pexels.com/photos/5533931/pexels-photo-5533931.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500") center center no-repeat;
+    flex-shrink: 0;
+    align-self: center;
+/*flex-basis: 40px;*/
+
+    margin-bottom: 6em;
+    
+}
+.img-b5{
+    background: url("https://images.pexels.com/photos/3990562/pexels-photo-3990562.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500") center center no-repeat;
+    flex-shrink: 0;
+    
+   /* flex-basis: 100px;*/
+    margin-left: -14em;
+    margin-bottom: -.9em;
+    align-self: flex-end;
+    
+}
+.img-b6{
+  background: url("https://images.pexels.com/photos/5614238/pexels-photo-5614238.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500") center center no-repeat;
+    flex-shrink: 0;
+  /*flex-basis: 10px;*/
+  align-self: center;
+  margin-bottom: 19em;
+
+
+    
+}
+.img-b7{
+    background: url("https://images.pexels.com/photos/5494048/pexels-photo-5494048.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500") center center no-repeat;
+    flex-shrink: 0;
+   /* flex-basis: 210px;*/
+    align-self: flex-end;
+    margin-left:-14em ;
+    margin-bottom: 5.5em;
+}
+.img-b8{
+    background: url("https://images.pexels.com/photos/5472685/pexels-photo-5472685.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")  center center no-repeat;
+    
+    flex-shrink: 0;
+    /*flex-basis: 10px;*/
+    
+    align-self: center;
+    
+    
+
+}
+.suggestion{
+    width: 90%;
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 8em auto;
+    
+
+}
+.suggestion a{
+    border-radius: 30px;
+    font-size: 19px;
+    color: black;
+    background:aliceblue;
+    margin: 12px;
+    padding: 7px;
+    text-decoration: none;
+
+
+}
+.suggestion a:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+.main-content{
+    margin: 0;
+    
+}
+.text-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin: 4em;
+    margin: 2em auto;
+       
+   
+}
+.filter{
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.filter h2{
+    width: 50%;
+    
+    padding-left: 12px;
+    text-indent: 6px;
+    text-transform: uppercase;
+    
+    
+    
+}
+
+.main-grid{
+    width: 50%;/* this works without max-width too , we need this section to be center and event with full screen*/
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    grid-column-gap:16px;
+    padding: 18px ;
+    justify-content: center;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+.main-grid img{
+    height: 300px;
+    object-fit:cover;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.item-grid,
+.item-grid1,
+.item-grid2,
+.item-grid3,
+.item-grid4,
+.item-grid5,
+.item-grid6,
+.item-grid7  {
+    padding: 12px 3px 5px;
+    cursor: pointer;
+   
+    
+}
+.text-grid p{
+    font-size:20px ;
+    width: 230px;
+}
+.text-grid a{
+    font-size: 19px;
+    text-decoration: none;
+    color: black;
+    padding-left: 4px;
+}
+@media (min-width:400px) and (max-width:500px) {
+    .main-grid{
+        width: 300px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap:3em ;
+       
+    }
+    .main-grid img{
+        object-fit: cover;
+        height: 70%;/*if would like to change or make imges the same size delete this */
+    }
+
+}
+img[id^=img]{
+    width: 100%;
+    min-width:200px ;
+}
+
+
+.pignation{
+    width: 16%;
+    
+    margin-top: .5em;
+    display: inline-block;
+}
+.pignation a {
+    font-size: 20px;
+    text-decoration: none;
+}
+.pignation i{
+    font-size: 50px;
+    background: none;
+    color: black;
+    border: 2px solid lightgrey;
+    border-radius: 30px;
+}
+.pignation i:hover { background: linear-gradient(350deg, blue,hotpink);}
+
+
+@media (max-width:900px){
+    .option-sec{
+        position: absolute;
+        z-index: 1;
+        margin-left: 6%;
+    }.pignation i {
+        font-size: 30px;
+        
+    }.filter {
+        flex-direction: column;
+        align-items: center;
+        column-gap: 16px;
+        
+    
+        
+    }.filter h2{
+        font-size: 20px;
+        width:270px;
+        margin: 12px auto;
+
+        
+    }
+    .filter .item-select1 {
+        margin:0 auto;
+        width: 260px;
+    }.text-content  {
+        margin-bottom: 5em;
+    }
+}
+
+.add-slide{
+    font-size: 40px;
+    padding-left:1em ;
+    padding-top: 1em;
+}
+#swiper-container{
+    position: relative;
+    z-index: 0;
+}
+
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin: 90px;
+    position: absolute;
+
+    
+  
+}
+.swiper-wrapper{
+    
+    height: 500px;
+    position: absolute;
+    z-index: 0;
+    
+}  
+.swiper-slide {
+    
+    height: 300px;
+    text-align: center;
+    font-size: 18px;
+    
+  
+        /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.sec-card{
+    max-width: 100%;
+
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 12px;
+}
+
+.card, 
+.card1, 
+.card2,
+.card3, 
+.card4, 
+.card5,
+.card6, 
+.card7, 
+.card8 {
+    text-align: start;
+    font-weight: 800;
+    width: 400px;
+    
+    padding: 12px;
+    height: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 12px;
+}
+.card{
+    background: url("https://images.pexels.com/photos/1587646/pexels-photo-1587646.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500") center center   no-repeat;
+    background-size: cover;
+}
+.card1 {
+    background: url("https://images.pexels.com/photos/976866/pexels-photo-976866.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500") center center   no-repeat;
+    background-size: cover;
+}
+.card2{
+    background: url("https://images.pexels.com/photos/382297/pexels-photo-382297.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500") center center   no-repeat;
+    background-size: cover;
+}
+.card3{
+    background: url("https://images.pexels.com/photos/4834893/pexels-photo-4834893.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")center;
+    background-size: cover;
+}
+.card4{
+    background: url("https://images.pexels.com/photos/431722/pexels-photo-431722.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")center center;
+    background-size: cover;
+}
+.card5{
+    background: url("https://images.pexels.com/photos/1157557/pexels-photo-1157557.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")center center;
+    background-size: cover;
+}
+.card6{
+    background: url("https://images.pexels.com/photos/919734/pexels-photo-919734.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")center center;
+    background-size: cover;
+}
+.card7{
+    background: url("https://images.pexels.com/photos/4689721/pexels-photo-4689721.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")center center;
+    background-size: cover;
+}
+.card8{
+    background: url("https://images.pexels.com/photos/2311713/pexels-photo-2311713.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")center center;
+    background-size: cover;
+}
+
+.cont-card h2{
+    margin-top: -.3em;
+    font-size: 36px;
+    color: aliceblue;
+}
+.cont-card p{
+    display: none;
+}
+.card-icon i{
+    display: none;
+    color: white;
+    font-size: 25px;
+    margin-top: 16px;
+
+}
+.card-icon i:hover{
+    box-shadow: 3px 2px 3px 1px black;
+    color: gold;
+    border-radius: 5px;
+}
+.card-icon  a:last-child{
+    background: white;
+    width: 3.8em;
+    color: black;
+    font-weight: 900;
+    text-align: start;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 24px;
+    display: block;
+    margin-top: 8.5em;
+    padding:5px;
+    
+}
+.card-icon a:last-child:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: gold;
+
+} 
+
+@media (max-width: 800px){
+    .swiper-container, .swiper-slide, .swiper-wrapper {
+        width: 100%;
+        margin: 0 auto;
+        
+    }
+    .card1, .card2,.card,.card3, .card4,.card5, .card6, .card7,.card8{
+      height: 300px;
+        
+    }.cont-card h2{
+        font-size: 25px;
+    }
+    .card-icon a:last-child{
+        margin-top: 8.6em;
+    }
+
+}
+
+.style-logo-cardSlide{
+    display: flex;
+    flex-direction: column;
+}

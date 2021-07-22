@@ -1,0 +1,72 @@
+$primary-color:#272727;
+$secondary-color:#ff652f;
+$third-color:lightblue;
+$forth-color:#fff;
+$sixth-color:#eee;
+
+
+
+$A-color:(
+  'white':#ffe6ff,
+  'pink': #ff65bd,
+  'darkPink':#ff2483,
+
+   'gold': #f1c40f,
+   'gold-y':#e67e22,
+   
+   'Sherpa-Blue':#013243,
+   'Deep-Sky-Blue':#19b5fe
+
+);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+$text-shadow: 0 0 0.6rem map-get($A-color, 'white' ), 0 0 1.5rem map-get($A-color, 'white' ),
+      -0.2rem 0.1rem 1rem map-get($A-color, 'pink' ), 0.2rem 0.1rem 1rem map-get($A-color, 'pink' ),
+      0 -0.5rem 2rem #ffe6ff, 0 0.5rem 3rem map-get($A-color, 'darkPink' );
+
+
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+@mixin transition-ease1 {
+    transition: all 0.6s ease-in;
+}
+
+@function set-text-color($color) {
+    @if (lightness($color) > 40%) {
+        @return #000;
+    }@else {
+        @return #fff;
+    }
+}
+
+@mixin media-md {
+        @media screen and (min-width:768px){
+            @content;
+        }
+}
+
+@mixin media-lg {
+    @media screen and (min-width:1024px){
+        @content;
+    }
+}
+
+@mixin media-xl {
+    @media screen and (min-width:1600px){
+        @content;
+    }
+}
+
+
+// shine 
+
+
+

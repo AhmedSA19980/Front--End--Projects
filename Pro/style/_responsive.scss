@@ -1,0 +1,25 @@
+@import './vars';
+
+@media (max-width: 460px) {
+  h1 {
+    font-size: map-get($TextSize , 'h1-small' );
+    line-height: 1.2;
+  }
+}
+
+
+@media (max-width: 460px) {
+  #main {
+    margin: 0;
+  }
+}
+
+
+
+
+
+@media (max-width: 460px) {
+  #img-caption {
+    font-size: map-get($TextSize , 'imgFont' );
+  }
+}
